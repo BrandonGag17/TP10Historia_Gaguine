@@ -1,0 +1,40 @@
+<diagram program="umletino" version="15.1"><zoom_level>11</zoom_level><element><id>UMLClass</id><coordinates><x>550</x><y>363</y><w>385</w><h>143</h></coordinates><panel_attributes>Premio
+--
+-nombre : String
+-ubicacion : String
+-valor : double
+--
++Premio(nombre: String, ubicacion: String, valor: double)
++mostrarInformacion(): String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>209</x><y>154</y><w>231</w><h>77</h></coordinates><panel_attributes>&lt;&lt;abstract&gt;&gt;
+ElementoSorteable
+--
++mostrarInformacion(): String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>209</x><y>363</y><w>297</w><h>143</h></coordinates><panel_attributes>Entrada
+--
+-nombreEvento: String
+-ubicacion: String
+-numeroEntrada: int
+--
++Entrada(nombreEvento: String, ubicacion: String, numeroEntrada: int)
++mostrarInformacion(): String
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>407</x><y>220</y><w>704</w><h>165</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;60;620;60;620;130</additional_attributes></element><element><id>UMLClass</id><coordinates><x>957</x><y>363</y><w>396</w><h>143</h></coordinates><panel_attributes>Participante
+--
+-nombre: String
+-apellido: String
+-edad: int
+--
++Participante(nombre: String, apellido: String, edad: int)
++mostrarInformacion(): String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>242</x><y>220</y><w>33</w><h>165</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;130</additional_attributes></element><element><id>UMLClass</id><coordinates><x>616</x><y>583</y><w>275</w><h>165</h></coordinates><panel_attributes>Urna&lt;T extends ElementoSorteable&gt;
+--
+-elementos:  List&lt;T&gt;
+-random: Random
+--
++Urna()
++agregar(elemento: T): void
++extraer(): T
++cantidad(): int
++estaVacia(): boolean
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>968</x><y>627</y><w>231</w><h>77</h></coordinates><panel_attributes>Main
+--
+--
++main(args: String[]): void </panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>330</x><y>220</y><w>363</w><h>165</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;90;310;90;310;130</additional_attributes></element><element><id>Relation</id><coordinates><x>880</x><y>627</y><w>110</w><h>44</h></coordinates><panel_attributes>lt=&lt;..
+utiliza</panel_attributes><additional_attributes>10;20;80;20</additional_attributes></element></diagram>
